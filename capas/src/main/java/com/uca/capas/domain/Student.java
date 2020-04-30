@@ -38,6 +38,7 @@ public class Student {
 	public void setEstado(Boolean estado) {
 		this.estado = estado;
 	}
+	
 	public Student(String nombre, String apellido, String fEntrada, String carrera, Boolean estado) {
 		super();
 		this.nombre = nombre;
@@ -47,4 +48,7 @@ public class Student {
 		this.estado = estado;
 	}
 	
+	public String delegateEstado() {
+		return this.estado ? "Activo":"Inactivo";
+	}
 }
