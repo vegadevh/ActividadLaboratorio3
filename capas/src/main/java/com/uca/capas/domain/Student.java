@@ -39,6 +39,10 @@ public class Student {
 		this.estado = estado;
 	}
 	
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+	
 	public Student(String nombre, String apellido, String fEntrada, String carrera, Boolean estado) {
 		super();
 		this.nombre = nombre;
