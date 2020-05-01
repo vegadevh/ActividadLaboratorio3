@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlms:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Inicio</title>
+</head>
+<body>
+
+	<h1>Estudiante</h1>
+	<form th:action="@{/formData}" th:object="${student}" method="post">
+		<label>Nombre: <input type="text" th:field="*{nombre}"></label><br>
+		<label>Apellido: <input type="text" th:field="*{apellido}"></label><br>
+		<label>Fecha de entrada: <input type="date" th:field="*{fEntrada}"></label><br>
+		<label>Carrera: <input type="text" th:field="*{carrera}"></label><br>
+		<label>Activo: <input type="radio" th:field="*{estado}" th:value="${true}"></label><br>
+		<label>Inactivo: <input type="radio" th:field="*{estado}" th:value="${false}"></label><br>
+		<input type="submit" value="Enviar"/>
+	</form>
+
+</body>
+</html>
